@@ -37,7 +37,7 @@ class pemail():
     def init_name(self):
         if len(sys.argv) != 2:
             hello()
-            sys.extt()
+            sys.exit()
         self.file = sys.argv[1]
         if self.file.split('.')[1] != 'txt':
             hello()
