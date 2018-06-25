@@ -101,5 +101,5 @@ try:
     print('[+] Check file VALID_EMAILS_*.txt')
     print('\nThanks for using my script! :)')
 except:
-            print('\n[+] Program has fineshed the work.')
-            print('\nThanks for using my script! :)')
+    print('\n[+] Program has fineshed the work.')
+    print('\nThanks for using my script! :)')
