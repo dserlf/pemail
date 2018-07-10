@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+# -*- coding: latin_1 -*-
 
 import smtplib
 import time
@@ -23,15 +23,10 @@ class pemail():
         }
 
     def hello(self):
-        print('Welcome to')
-        print('╔═══╦═══╦╗──╔╦══╦══╦╗')
-        print('║╔═╗║╔══╣║──║║╔╗╠╗╔╣║')
-        print('║╚═╝║╚══╣╚╗╔╝║╚╝║║║║║')
-        print('║╔══╣╔══╣╔╗╔╗║╔╗║║║║║')
-        print('║║──║╚══╣║╚╝║║║║╠╝╚╣╚═╗')
-        print('╚╝──╚═══╩╝──╚╩╝╚╩══╩══╝ version 1.0\n')
-        print('=' * 20)
-        print('Usage: python3 pemail.py [file_to_clean]')
+        print('Welcome to pemail.py')
+        print('ver 1.0')
+        print('=' * 7W)
+        print('Usage: python3 pemail.py [file_to_parse]')
         print('Example: python3 pemail.py gmail_base.txt')
 
     def init_name(self):
@@ -62,7 +57,7 @@ class pemail():
         return(self.clean_file)
 
     def checkValid(self):
-        valid_file = open('VALID_EMAILS_{0}.txt'.format(time.strftime("%H:%M:%S", time.localtime())), mode='w+', encoding='latin_1')
+        valid_file = open('VALID_EMAILS_{0}.txt'.format(time.strftime("%H%M%S", time.localtime())), mode='w+', encoding='latin_1')
         #grab login:pas from file
         print('[+] Starting work with {0}'.format(self.clean_file))
         with open(self.clean_file, mode='r', encoding='latin_1') as f:
@@ -101,5 +96,5 @@ try:
     print('[+] Check file VALID_EMAILS_*.txt')
     print('\nThanks for using my script! :)')
 except:
-    print('\n[+] Program has fineshed the work.')
-    print('\nThanks for using my script! :)')
+    print('[+] Program has finished the work')
+    sys.exit()
