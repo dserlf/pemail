@@ -15,7 +15,7 @@ class pemail():
         self.smtp_dic = {
                     #Gmail rabotaet zaebis'
                     'gmail.com' : 'smtp.gmail.com:587',
-                    #govno ne rabotaet; Mozete proverit' s drygimi pochtovimi servisami.
+                    #ne rabotaet; Mozete proverit' s drygimi pochtovimi servisami.
                     'yandex.ru' : 'smtp.yandex.ru:587',
                     'mail.ru'   : 'smtp.mail.ru:465',
                     'rambler.ru': 'smtp.rambler.ru:465',
@@ -25,7 +25,7 @@ class pemail():
     def hello(self):
         print('Welcome to pemail.py')
         print('ver 1.0')
-        print('=' * 7W)
+        print('=' * 7)
         print('Usage: python3 pemail.py [file_to_parse]')
         print('Example: python3 pemail.py gmail_base.txt')
 
