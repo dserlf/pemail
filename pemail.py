@@ -1,6 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: latin_1 -*-
 
+#========================
+#                       |
+# pemail v1.0           |
+# Made by dserlf        |
+#                       |
+#========================
+
 import smtplib
 import time
 import re, os, sys
